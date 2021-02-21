@@ -1,0 +1,246 @@
+.main-section {
+  background-image: url("../images/desktop/image-hero.jpg");
+  height: 35rem;
+  background-size: cover;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Josefin"Sans;
+  font-weight: 300;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: left;
+  padding: 5% 15%;
+  font-family: "Josefin"Sans;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+p {
+  color: hsl(0, 0%, 55%);
+}
+
+
+
+/* Navigation Bar */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 3% 10%;
+}
+
+.nav-item {
+  padding: 0 15px;
+  font-size: 1.2rem;
+}
+
+ul a:hover {
+  color: #fff !important;
+}
+
+nav li {
+  text-align: center;
+}
+
+li>a:after {
+  content: '';
+  display: block;
+  height: 1.5px;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform .3s;
+}
+
+li>a:hover:after {
+  transform: scaleX(1);
+  transition: transform .3s;
+}
+
+.active {
+  color: #fff !important;
+}
+
+.title-text {
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: left;
+  font-size: 3.5rem;
+  font-family: "Josefin"Sans;
+  padding: 2% 8% 2% 5%;
+  font-weight: 300;
+  margin: 4% 20%;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+/* VR Section */
+.vr-container {
+  padding: 10%;
+}
+
+.vr-section {
+  padding: 3% 5%;
+}
+
+.vr-content {
+  background-color: #fff;
+  margin-top: 15%;
+  padding: 5% 8%;
+}
+
+/* Grid Section */
+
+.grid-section {
+  padding-bottom: 15%;
+}
+.desktop-btn {
+  padding: 1% 5%;
+  font-family: "Josefin"Sans;
+  letter-spacing: 2px;
+}
+
+.mobile-btn {
+  visibility: hidden;
+}
+
+.container {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.grid-btn {
+  text-align: center;
+}
+
+h2.grid-text {
+  padding: 5% 20%;
+}
+
+h2:hover {
+  color: hsl(0, 0%, 55%);
+}
+
+/* Footer Section */
+
+.footer-container {
+  background-color: hsl(0, 0%, 0%);
+  padding: 4% 5%;
+}
+
+.footer-icons {
+  text-align: right;
+  color: hsl(0, 0%, 100%);
+  padding-top: 20px;
+}
+
+i:hover {
+  text-decoration: underline;
+}
+
+.footer-icon {
+  padding-right: 10px;
+}
+.nav-link {
+  color: #fff;
+}
+
+.footer-nav {
+  color: hsl(0, 0%, 100%);
+  padding-right: 20px;
+}
+
+.footer-nav:hover {
+  color: white;
+}
+
+.attribution {
+  text-align: center;
+  padding: 2%;
+}
+
+
+/* Mobile Design */
+
+@media only screen and (max-width: 600px) {
+  .main-section {
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-size: cover;
+  }
+  h1 {
+    font-size: 2rem;
+    font-family: "Josefin"Sans;
+    font-weight: 300;
+  }
+  .title-text {
+    font-size: 3rem;
+    font-family: "Josefin"Sans;
+    font-weight: 200;
+    margin: 8%;
+  }
+  .vr-image {
+    width: 100%;
+  }
+  .vr-content {
+    text-align: center;
+  }
+
+  .desktop-btn {
+    visibility: hidden;
+  }
+
+  .mobile-btn {
+    visibility: visible;
+  }
+
+  .mobile-button {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .grid-nav {
+    padding: 0 25%;
+  }
+  .grid-img {
+    padding-bottom: 40px;
+  }
+  .grid-images {
+    width: 80%;
+  }
+  h2 {
+    text-align: right;
+    font-family: "Josefin"Sans;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 8px;
+    left: 5rem;
+  }
+  .footer-container {
+    text-align: center;
+    padding-bottom: 8rem;
+  }
+  .footernav-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav {
+    padding-bottom: 20px;
+  }
+  .footer-icons {
+    text-align: center;
+    padding: 30px;
+  }
+  .grid-title {
+    margin-left: 1rem;
+  }
+}
